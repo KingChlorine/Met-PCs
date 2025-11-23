@@ -9,10 +9,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
     rel="stylesheet">
     
-   
     
 </head>
-<body>
+   <body class="">
+
     <div class="mobilenav">
     <p id="mobilelink">
       <a id="burger">☰</a>
@@ -53,7 +53,10 @@
         <a target="_blank"  class="sociallink" href="https://fuckmusk.com/"><i class="fa-brands fa-square-x-twitter"></i></a>
         <a target="_blank"  class="sociallink" href="https://gb.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
        
-        <p class="cart"> £0.00 </p><i class='fas fa-shopping-cart'></i></div>
+        <p class="cart"> £0.00 </p>
+        <button class="cartButton"><i class='fas fa-shopping-cart'></i>
+       <!--<span>0</span>-->
+       </button></div>
 
     </div>  
     
@@ -67,6 +70,7 @@
 
          <div class="box">
             <img src="images/rgb case.jpg" class="pic">
+            <button id="addcart">Add to cart</button>
             <label class="name">This Piece of kit</label>
             <br>
             <label class="£">£69.69</label>
@@ -120,13 +124,37 @@
          <button id="see">See more</button>
          </div>
 
+         <div class="cartTab">
+            <h1>Shopping Cart</h1>
+            <div class="listCart">
+               <div class="item1">
+                  <div class="image">
+                     <img src="images/rgb case - Edited.png" alt="">
+                  </div>
+                  <div class="name">Name</div>
+                  <div class="totalPrice">£69.99</div>
+                  <div class="quantity">
+                     <span class="minus"><</span>
+                     <span>1</span>
+                     <span class="plus">></span>
+                  </div>
+               </div>
+              
+              
+               
+            </div>
+            <div class="btn1">
+               <button class="closeButton">CLOSE</button>
+               <button class="checkOut">CHECK OUT</button>
+            </div>
+         </div>
+      
          <div class="shopfront">
    <iframe width="560" height="315" 
    src="https://www.youtube.com/embed/wjASUV6_FMk?si=OBmuJJznUE1xkbhz&amp;start=14" 
    title="YouTube video player" 
-   frameborder="0" allow="accelerometer; autoplay=1&mute=0&controls=0&showinfo=0" a
-   llow="autoplay; encrypted-media" clipboard-write; encrypted-media; gyroscope; 
-   picture-in-picture; web-share" 
+   frameborder="0" allow="accelerometer"; allow="autoplay; encrypted-media" clipboard-write; encrypted-media; gyroscope; 
+   picture-in-picture;  
    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <div class="textblock">
        <h2 id="service">Custom PC Building</h2>
@@ -145,7 +173,9 @@
 <div class="footer">
         <a href="productAndServices.html"><img id="metdark" src="images/Met dark.png"></a>
     
-        <p id="address"><i class='fa-solid fa-map-location'></i> Franklin Street, Belfast</p>
+        <p id="address"><i class='fa-solid fa-map-location'></i> Franklin Street, Belfast</p> </div>
 
+ <script src="script.js"></script> 
+          
 </body>
 </html>
