@@ -28,7 +28,8 @@ a       {display: flex;
         outline: none;
         color: rgb(84, 83, 83);
         padding-left: 10px;
-        padding-right: 10px;}       
+        padding-right: 10px;
+        cursor: pointer;}       
 
         
 
@@ -65,9 +66,25 @@ a       {display: flex;
         justify-content: flex-end;
         flex-direction: row;
         align-items: center;
-        padding-left: 32.6rem;
         gap: 1em;
-        padding-right: 2em;}
+        padding-right: 2em;
+        position: relative;
+        
+        }
+
+i, span {cursor: pointer;}
+
+.socials span {display: flex;
+                width: 15px;
+                height: 15px;
+                background-color: red;
+                justify-content: center;
+                align-items: center;
+                color: #ffffff;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                left: -1p;}
 
 #faq {display:flex;
       flex:1;
@@ -80,6 +97,25 @@ font-size:3em;
 margin-bottom: 2em;
 color: #56b7e5;}
 
+.shopfront {display: flex;
+            justify-content: space-around;
+            margin-bottom: 5em;
+            }
+
+#shopFrontPic {width: 40vw;}
+
+#text {width: 40vw;
+        font-family: Arial, sans-serif;
+        color: #1C377F;}
+            
+
+#service {all: unset;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: auto;
+        text-align: center;
+        font-size:3em;
+        margin-bottom: 2em;
+        color: #56b7e5;}
 
 
 .navlink {text-decoration: none;
@@ -102,6 +138,7 @@ color: #56b7e5;}
         background: none;
         border: none;
         padding: 30px;
+        cursor: pointer;
 }
 
 #sign:hover {color: #808080;}
@@ -111,6 +148,8 @@ color: #56b7e5;}
 .cart {margin-left: auto;
         margin-right: 20px;
       }
+        
+       }
 
 .title {font-size: 4.8em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -144,13 +183,41 @@ color: #56b7e5;}
 #leftbutton {background: none;
         color: azure;
         border: 0;
-        height: 100;}
+        height: 100;
+        cursor: pointer;
+        }
 
 #rightbutton {
 background: none;
 border: 0;
 color: azure;
-height: 100;}
+height: 100;
+cursor: pointer;}
+
+
+#new {
+        all: unset;
+        overflow: scroll;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        display: flex;
+        white-space: nowrap;
+        position: static;
+        gap: 4em;
+      
+}
+ 
+
+ #new::-webkit-scrollbar {
+                display: none; 
+        }  
+
+ .newcontain {display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 6em;}    
+                
+.move {height: 5em;}                
 
 .gallery {
         display: flex;
@@ -174,6 +241,27 @@ height: 100;}
 #price {color: #56b7e5;}
 
 footer { 
+
+.reviews {border: solid 2px #56b7e5;
+         margin-bottom: 4em;
+         padding-bottom: 2em;
+         border-radius: 15px;
+         font-family: Arial, sans-serif;
+}
+
+.r {width: 50em;}
+
+
+.feedback {display: flex;
+          padding-left: 4em;
+           padding-right: 4em;
+         gap: 2em;}
+
+#feedbk {color: #56b7e5;
+        font-family: 'Arial Narrow', Arial, sans-serif;
+        text-align: center;}
+
+.footer { 
 background-color: #1C377F;;
 height: 230px;
 display: flex;
@@ -193,6 +281,162 @@ text-align: center;}
 
 #address {color: aliceblue;
                 margin-top: 0;}
+
+#homeh1 {text-decoration: none;
+        color: #1C377F;}
+
+.sub {font-size: 2em;
+       font-family: 'Arial Narrow', Arial, sans-serif;
+        margin-left: 2.5em;
+        color: #1C377F;
+        font-style: oblique; }
+
+.container {display: grid; 
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+                padding-bottom: 4em;
+                padding-left: 1em;
+                padding-right: 1em;
+                margin:0;
+                grid-template-rows: 50vh;
+                place-items: center;
+               
+                }
+
+.box {border: solid 2px #56b7e5; 
+      border-radius: 15px;
+        width: 15em;
+        height: 20em;
+        box-shadow: 1px 3px 8px 1px rgb(241, 241, 241);
+        cursor: pointer;
+        
+        }
+
+
+.name {color: #1C377F;
+       margin-left: .5em;
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       font-size: 1.2em;
+}
+
+#addcart {width: inherit;
+          background-color: #56b7e5;
+         color: #ffffff;
+         border: none;
+         margin-bottom: .5em;
+         padding-top: .25em;
+         padding-bottom: .25em;
+         cursor: pointer;
+          }
+
+#addcart:hover {background-color: #1C377F;}
+
+.£ {margin-left: .5em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #56b7e5;}
+
+.pic {height: 12em;
+        width: 15em;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        margin-bottom: .5em;
+        margin-top: 2em;
+        margin-bottom: 1em;
+        }    
+        
+#seemore {display: flex;
+        justify-content: center;
+        margin-bottom: 4em;
+        }
+
+#see {border: solid 1px #56b7e5;
+      border-radius: 10px;
+        color: #56b7e5;
+        background-color: white;
+        width: 10em;
+        height: 2em;
+        cursor: pointer;}
+
+#see:hover {background-color: #56b7e5;
+            color: #ffffff;}
+
+.cartTab {width: 400px;
+         background-color: #56b7e5;
+         color: #ffffff;
+         position: fixed;
+         inset: 0 -400px 0 auto;
+         display: grid;
+         grid-template-rows: 70px 1fr 70px;
+         font-family:  Arial, sans-serif;
+        
+        
+        }
+
+body.showCart .cartTab {
+        inset: 0 0 0 auto;
+}
+
+
+
+
+.cartTab h1 {padding: 20px;
+           margin: 0;
+           font-weight: 300;
+           font-family: Arial, sans-serif;
+        }
+
+.listCart .name {color: #ffffff;}
+
+.cartTab .btn1 {display: grid;
+        grid-template-columns: repeat(2, 1fr);}
+
+.cartTab .btn1 button{
+        background-color: #1C377F;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+        font-weight: 500;
+}
+
+.cartTab .btn1 .closeButton {background-color: #f2f2f2;
+                        color: #1C377F;}
+
+.cartTab .listCart .item1 img {
+        width: 100%;
+}
+
+.cartTab .listCart .item1 {
+        display: grid;
+        grid-template-columns: 70px 150px 50px 1fr;
+        gap: 10px;
+        text-align: center;
+        align-items: center;
+}
+
+.listCart .quantity span {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: #ffffff;
+        color: #1C377F;
+        border-radius: 50%
+}
+
+.listCart .quantity span:nth-child(2) {
+        background-color: transparent;
+        color: #ffffff;
+ }
+
+ .listCart .item1:nth-child(even) {
+        background-color: #7acff7;
+ }
+
+ .listCart {overflow: auto;}
+
+ .listCart::-webkit-scrollbar{
+        width: 0;
+ }
+
+ .cartButton {all: unset;}
 
 @media (max-width: 768px) {
 
@@ -235,7 +479,9 @@ text-align: center;}
               }
 
         #cart {padding-right: 1em;}
-        .selectCategory {width: 2vw;}
+
+        .selectCategory {width: 2vw;
+        cursor: pointer;}
         
         .logo, #home {display: none;
                         
@@ -322,6 +568,7 @@ text-align: center;}
         #rightbutton {position: relative;
                       top: 50%;
                       right: 5%;
+                      
                      
                      }
 
@@ -377,9 +624,31 @@ text-align: center;}
         .group {width:150px;
         }
 
-    
-       
-        }
+        .shopfront {display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            
+            }
+
+#shopFrontPic {width: 80vw;
+                height: 70vw;
+                background-color: #1C377F;
+                all: unset;
+                padding-top: 4em;
+                
+
+                }
+#instore {margin-top: -7.5em;
+        padding-bottom: 200px;
+         }
+
+#text {all: unset;
+        color: #1C377F;
+        width: 80vw;
+        
+}
 
         
         footer {color:#ffffff;
@@ -401,6 +670,9 @@ text-align: center;}
                 
         
 
+
+
+}
 
        
        

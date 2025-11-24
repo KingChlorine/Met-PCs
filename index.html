@@ -14,6 +14,8 @@
 </head>
 <body>
    <main>
+<body class="">
+
     <div class="mobilenav">
     <p id="mobilelink">
       <a id="burger">☰</a>
@@ -54,13 +56,19 @@
         <a target="_blank"  class="sociallink" href="https://fuckmusk.com/"><i class="fa-brands fa-square-x-twitter"></i></a>
         <a target="_blank"  class="sociallink" href="https://gb.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
        
-        <p class="cart"> £0.00 </p><i class='fas fa-shopping-cart'></i></div>
+        <p class="cart"> £0.00 </p>
+        <button class="cartButton"><i class='fas fa-shopping-cart'></i>
+       <!--<span>0</span>-->
+       </button></div>
+
 
     </div>
     
     <!-- <h1 class="title">Met PCs</h1> -->
-    <h1 class="title">Met PCs</h1> 
-    <h2 class="tagline">Custom PC Experts</h2>
+    <h1 class="title"><a id="homeh1" href="index.html">Met PCs</a></h1> 
+    <h2 class="tagline">PCs—Laptops—Peripherals—Parts</h2>
+
+
 
     <div class="gallery1">
     <button id="leftbutton" onclick="FirstImage()">❮</button>  
@@ -70,9 +78,30 @@
     <button id="rightbutton" onclick="SecondImage()">❯</button>
 
     </div>
+
+ 
+    <div class="shopfront">
+    <img id="shopFrontPic" src="images/shopfront.png">
+    <div class="textblock">
+       <h2 id="instore">Shop in store</h2>
+       <p id="text">Contrary to popular belief, Lorem Ipsum is not simply random text. 
+         It has roots in a piece of classical Latin literature from 45 BC, 
+         making it over 2000 years old. Richard McClintock, a Latin professor 
+         at Hampden-Sydney College in Virginia, looked up one of the more obscure
+          Latin words, consectetur, from a Lorem Ipsum passage, and going through the 
+          cites of the word in classical literature, discovered the undoubtable source.</p>
+          <p id="text">
+          Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et 
+          Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. 
+          This book is a treatise on the theory of ethics, very popular during the 
+          Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", 
+          comes from a line in section 1.10.32.</p>
+    </div>
+    </div>
     
      
     <h2>Latest in stock</h2>
+    <!--
     <div class="gallery">
         <div class="group">
         <img class="item" src="images/rgb case.jpg">
@@ -129,8 +158,136 @@
     </main>
      
 <footer>
+        </div>
+   --> 
+
+
+ <div class="cartTab">
+            <h1>Shopping Cart</h1>
+            <div class="listCart">
+               <div class="item1">
+                  <div class="image">
+                     <img src="images/rgb case - Edited.png" alt="">
+                  </div>
+                  <div class="name">Name</div>
+                  <div class="totalPrice">£69.99</div>
+                  <div class="quantity">
+                     <span class="minus"><</span>
+                     <span>1</span>
+                     <span class="plus">></span>
+                  </div>
+               </div>
+              
+              
+               
+            </div>
+            <div class="btn1">
+               <button class="closeButton">CLOSE</button>
+               <button class="checkOut">CHECK OUT</button>
+            </div>
+         </div>
+
+       <div class="newcontain">
+       <button id="slideL" class="move">◀</button>
+
+
+        <div id="new" class="gallery">
+
+         <div class="group">
+        <img class="item" src="images/rgb case.jpg">
+        <label class="label">RGB PC Case</label>
+        <label id="price">£139.99</label></div>
+
+        <div class="group">
+        <img class="item" src="images/pc gaming mouse.jpg">
+        <label class="label">Gaming </label>
+        <label id="price">£69.99</label></div>
+
+        <div class="group">
+        <img class="item" src="images/motherboard.jpg">
+        <label class="label">Motherboard</label>
+        <label id="price">£75.00</label></div>
+
+        <div class="group">
+        <img class="item" src="images/hdmi computer monitor.webp">
+        <label class="label">Hdmi monitor</label>
+        <label id="price">£139.99</label></div>
+
+         <div class="group">
+        <img class="item" src="images/power supply.jpg">
+        <label class="label">Power supply</label>
+        <label id="price">£139.99</label></div>
+
+         <div class="group">
+        <img class="item" src="images/gaming keyboard.jpg">
+        <label class="label">RGB Keyboard</label>
+        <label id="price">£139.99</label></div>
+
+         <div class="group">
+        <img class="item" src="images/RGB PC Speakers.jpg">
+        <label class="label">RGB PC Speakers</label>
+        <label id="price">£139.99</label></div>
+
+        <div class="group">
+        <img class="item" src="images/rgb case.jpg">
+        <label class="label">RGB PC Case</label>
+        <label id="price">£139.99</label></div>
+
+        <div class="group">
+        <img class="item" src="images/pc gaming mouse.jpg">
+        <label class="label">Gaming </label>
+        <label id="price">£69.99</label></div>
+
+        <div class="group">
+        <img class="item" src="images/motherboard.jpg">
+        <label class="label">Motherboard</label>
+        <label id="price">£75.00</label></div>
+
+        <div class="group">
+        <img class="item" src="images/hdmi computer monitor.webp">
+        <label class="label">Hdmi monitor</label>
+        <label id="price">£139.99</label></div>
+
+         <div class="group">
+        <img class="item" src="images/power supply.jpg">
+        <label class="label">Power supply</label>
+        <label id="price">£139.99</label></div>
+
+         <div class="group">
+        <img class="item" src="images/gaming keyboard.jpg">
+        <label class="label">RGB Keyboard</label>
+        <label id="price">£139.99</label></div>
+
+         <div class="group">
+        <img class="item" src="images/RGB PC Speakers.jpg">
+        <label class="label">RGB PC Speakers</label>
+        <label id="price">£139.99</label></div>
+        </div> 
+
+     <button id="slideR" class="move">➤</button>  
+      </div> 
+
+     <div class="reviews"> <h3 id="feedbk">Feedback!</h3>
+     <div class="feedback">
+      <p class="r">"Contrary to popular belief, Lorem Ipsum is not simply random text. 
+         It has roots in a piece of classical Latin literature from 45 BC, 
+         making it over 2000 years old." <br> <br> -reliable source</p>
+      <p class="r">"Richard McClintock, a Latin professor 
+         at Hampden-Sydney College in Virginia, looked up one of the more obscure
+          Latin words, consectetur" <br> <br> -reliable source</p>
+      <p class="r"> "Latin words, consectetur, from a Lorem Ipsum passage, and going through the 
+          cites of the word in classical literature, discovered the undoubtable source."
+         <br><br> -reliable source</p>
+      
+     </div>
+
+
+     </div>
+
+
+
     <div class="footer">
-        <img id="metdark" src="images/Met dark.png">
+        <a href="index.html"><img id="metdark" src="images/Met dark.png"></a>
     
         <p id="address"><i class='fa-solid fa-map-location'></i> 123 Central Belfast Franklin Street</p>
         <a class="emailcolor" href="MetPCs123@gmail.com">MetPCs123@gmail.com</a>
@@ -138,6 +295,7 @@
     </footer>
 
 
+        <p id="address"><i class='fa-solid fa-map-location'></i> Franklin Street, Belfast</p>
         
 
         
