@@ -182,13 +182,16 @@ color: #56b7e5;}
 #leftbutton {background: none;
         color: azure;
         border: 0;
-        height: 100;}
+        height: 100;
+        cursor: pointer;
+        }
 
 #rightbutton {
 background: none;
 border: 0;
 color: azure;
-height: 100;}
+height: 100;
+cursor: pointer;}
 
 
 #new {
@@ -284,16 +287,15 @@ flex-direction: column;}
         color: #1C377F;
         font-style: oblique; }
 
-.container {display: flex; 
-            gap: 3em;
-            flex-direction: row;
-             flex-wrap: wrap;
-                align-content: center;
-                justify-content: center;
-                justify-content: space-around;
+.container {display: grid; 
+        grid-template-columns: 1fr 1fr 1fr 1fr;
                 padding-bottom: 4em;
                 padding-left: 1em;
                 padding-right: 1em;
+                margin:0;
+                grid-template-rows: 50vh;
+                place-items: center;
+               
                 }
 
 .box {border: solid 2px #56b7e5; 
@@ -302,6 +304,7 @@ flex-direction: column;}
         height: 20em;
         box-shadow: 1px 3px 8px 1px rgb(241, 241, 241);
         cursor: pointer;
+        
         }
 
 
@@ -420,7 +423,7 @@ body.showCart .cartTab {
  }
 
  .listCart .item1:nth-child(even) {
-        background-color: #3857ab;
+        background-color: #7acff7;
  }
 
  .listCart {overflow: auto;}
@@ -561,6 +564,7 @@ body.showCart .cartTab {
         #rightbutton {position: relative;
                       top: 50%;
                       right: 5%;
+                      
                      
                      }
 
