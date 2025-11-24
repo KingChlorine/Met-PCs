@@ -391,11 +391,13 @@ text-align: center;}
 
         main { display: flex;
       flex-direction: column;
-      min-height: 10vh; /* full viewport height */
+      min-height: 60vh; /* full viewport height */
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
+      }
 
     header {font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
+
+    
                 
         
 

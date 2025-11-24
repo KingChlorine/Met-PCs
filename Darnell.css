@@ -12,7 +12,7 @@
 details {
   border: 2px solid #1C377F;
   border-radius: 10px;
-  margin: 50px auto;
+  margin: 40px auto;
   padding: 1em;
   background-color: #56b7e5;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -40,4 +40,15 @@ details p {
 .faq-welcome h1 {text-align: center;
 background-color: #56b7e5;
 margin: 0}
+
+.map {margin: 30px 0 10rem 60rem;
+height: 35rem;
+width: 45rem;
+display: flex;
+}
+
+.contact-emailcolor {color:#1C377F;
+text-decoration: none;
+}
+
 
