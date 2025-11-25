@@ -1,0 +1,54 @@
+.socials {display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        align-items: center;
+        gap: 1em;
+        margin-left: 38rem;
+       
+         
+
+}
+
+ details {
+  border: 2px solid #1C377F;
+  border-radius: 10px;
+  margin: 40px auto;
+  padding: 1em;
+  background-color: #56b7e5;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 45rem;
+  font-weight: bold;
+  scroll-behavior: auto;
+  text-align: left;}
+
+summary {
+  cursor: pointer;
+font-size: 20px;}
+
+summary::-webkit-details-marker {
+  display: none; /* removes default marker in Chrome/Safari */
+}
+
+details[open] {
+  background: #56b7e5;
+}
+
+details p {
+  margin: 1em 0 0;
+}
+
+.faq-welcome h1 {text-align: center;
+margin: 0;
+border-style: solid;
+border-color: black;
+margin-top: 20;}
+
+.contact-email {color:#1C377F;
+text-decoration: none;
+margin-right:20.5rem}
+
+.about-1 {color:#1C377F;
+text-align: center;}
+
+.about-2 {text-align: center;
+margin: 0 25rem 0 25rem;}
