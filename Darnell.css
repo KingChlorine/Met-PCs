@@ -38,19 +38,40 @@ details p {
 }
 
 .faq-welcome h1 {text-align: center;
-margin: 0;
+margin: 0 30rem;
+color:#1C377F;
 border-style: solid;
-border-color: black;
-margin-top: 20;}
+border-color: #56b7e5;
+margin-top: 20px; 
+border-radius: 20px;
+border-width: 7px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
 
-.contact-email {color:#1C377F;
-text-decoration: none;
-margin-right:20.5rem}
 
-.about-1 {color:#1C377F;
-text-align: center;}
+.about-1 {color: #1C377F;
+text-align: center;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+border-style: solid;
+border-color: #56b7e5;
+border-width: 7px;
+margin: 0 30rem 0 30rem;
+border-radius: 20px;
+}
+
+
 
 .about-2 {text-align: center;
-margin: 0 25rem 0 25rem;}
+margin: 0 25rem 0 25rem;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
 
-.testing{height: 20rem}
+td img {height:15rem;
+border-radius: 25px;
+width: 30rem;
+margin-right: 100px;
+border-style: solid;
+border-color: #56b7e5;
+border-width: 5px;}
+
+
+.email {margin: 0;
+}

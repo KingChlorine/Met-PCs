@@ -59,8 +59,9 @@ a       {display: flex;
         position: sticky;
         top: 0;
         align-items: center;
-     
+        
 }
+
 
 .socials {display: flex;
         justify-content: flex-end;
@@ -119,7 +120,10 @@ color: #56b7e5;}
 
 
 .navlink {text-decoration: none;
-   color: lightgray;}
+   color: lightgray;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+.navlink:hover {text-decoration-line: underline;}
 
 #mhome {visibility: hidden;
         width: 0;}
@@ -132,7 +136,8 @@ color: #56b7e5;}
 
 .sociallink:hover {color: #ffffff;}
 
-.navlink:hover {color: #ffffff;}
+.navlink:hover {color: #ffffff;
+}
 
 #sign {
         background: none;
@@ -261,10 +266,12 @@ cursor: pointer;}
 
 .footer { 
 background-color: #1C377F;;
-height: 200px;
+height: 220px;
 display: flex;
 align-items: center;
-flex-direction: column;}
+flex-direction: column;
+color:#ffffff;
+margin: 0}
 
 #metdark {
         height: 100px;
@@ -646,13 +653,11 @@ body.showCart .cartTab {
         
 }
 
- .emailcolor {color:#ffffff;
-             text-decoration:None;
-}
+ 
+
 
  .footer {color:#ffffff;
         text-decoration:None;
-}
+ }
 
-       
        
