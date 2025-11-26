@@ -407,7 +407,8 @@ body.showCart .cartTab {
         grid-template-columns: repeat(4, 1fr);
         gap: 20px;
         padding-bottom: 2em;
-       
+        justify-items: center;
+        
         
 }
 
@@ -734,4 +735,4 @@ body.showCart .cartTab {
         text-decoration:None;
  }
 
-       
+}
