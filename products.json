@@ -1,0 +1,42 @@
+[
+    {"id":1,
+     "name": "RGB CASE",
+     "price": 70,
+     "image": "images/rgb case - Edited.png"},
+
+      {"id":2,
+     "name": "Gaming keyboard",
+     "price": 30,
+     "image": "images/gaming keyboard.png"},
+
+       {"id":3,
+     "name": "PC gaming mouse",
+     "price": 20,
+     "image": "images/pc gaming mouse.png"},
+
+      {"id":4,
+     "name": "Graphics card",
+     "price": 20,
+     "image": "images/graphics card.png"},
+
+      {"id":5,
+     "name": "Motherboard",
+     "price": 20,
+     "image": "images/motherboard.png"},
+
+       {"id":6,
+     "name": "HDMI Monitor",
+     "price": 20,
+     "image": "images/hdmi computer monitor.png"},
+
+       {"id":7,
+     "name": "Power supply",
+     "price": 20,
+     "image": "images/power supply.png"},
+
+       {"id":8,
+     "name": "SSD Card",
+     "price": 20,
+     "image": "images/SSD Solid State Drive.png"}
+
+]

@@ -25,11 +25,12 @@ a       {display: flex;
 
         
 .selectCategory {height: 40px;
-        outline: none;
+        border-left: none;
         color: rgb(84, 83, 83);
         padding-left: 10px;
         padding-right: 10px;
-        cursor: pointer;}       
+        cursor: pointer;
+        margin-left: -.42px;}       
 
         
 
@@ -84,7 +85,7 @@ i, span {cursor: pointer;}
                 border-radius: 50%;
                 position: absolute;
                 top: 50%;
-                left: -1p;}
+                margin-left: 10px;}
 
 #faq {display:flex;
       flex:1;
@@ -295,10 +296,11 @@ flex-direction: column;}
                 margin:0;
                 grid-template-rows: 50vh;
                 place-items: center;
+                gap: 40px;
                
                 }
 
-.box {border: solid 2px #56b7e5; 
+.item1 {border: solid 2px #56b7e5; 
       border-radius: 15px;
         width: 15em;
         height: 20em;
@@ -324,7 +326,8 @@ flex-direction: column;}
          cursor: pointer;
           }
 
-#addcart:hover {background-color: #1C377F;}
+#addcart:hover {background-color: #7acff7;
+        padding-bottom: 10px;}
 
 .£ {margin-left: .5em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -374,27 +377,94 @@ body.showCart .cartTab {
 
 
 
-.cartTab h1 {padding: 20px;
-           margin: 0;
-           font-weight: 300;
-           font-family: Arial, sans-serif;
-        }
 
-.listCart .name {color: #ffffff;}
+.cartTab .name {font-size: 15px;}
+
+
+.item .item1 { height: 100%;
+         box-shadow: none;
+        width: fit-content;}
+        
+.item {height: 70px;
+        padding-left: 10px;}
+
+
+
+
+
+.listCart .name {color: #ffffff;
+ }
+
+.listProduct  {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding-bottom: 2em;
+       
+        
+}
+
+.listProduct .item1 {
+        display: grid;
+        justify-items: center;
+}
+
+.listProduct .item1 .price {
+       height: 10px;
+       margin: 0;
+       padding: 0;
+}
+
+.listProduct .item1 img {
+        width: 12em;
+        padding-top: 1em;
+        height: 10em;
+       
+       
+
+}
+
+.listProduct .item1 h2 {
+        font-size: 1.5em;
+        padding: 0;
+        margin: 0;
+        height: 10px;
+}
+
+.listProduct .item1 .addcart {
+      
+        width: 100%;
+         background-color: #29afed;
+         color: #ffffff;
+         border: none;
+         cursor: pointer;
+         height: 25px;
+}
+
+.listProduct .item1 .addcart:hover {background-color: #7acff7;}
+
+.cartTab h1 {padding-left: 10px;}
 
 .cartTab .btn1 {display: grid;
         grid-template-columns: repeat(2, 1fr);}
 
 .cartTab .btn1 button{
-        background-color: #1C377F;
+        background-color: #29afed;
         color: #ffffff;
         border: none;
         cursor: pointer;
         font-weight: 500;
 }
 
+.cartTab .btn1 button:hover {
+        background-color: #7acff7;
+}
+
 .cartTab .btn1 .closeButton {background-color: #f2f2f2;
-                        color: #1C377F;}
+                        color: #000000;}
+
+.cartTab .btn1 .closeButton:hover {background-color: #ffffff;
+                        color: #000000;}                        
 
 .cartTab .listCart .item1 img {
         width: 100%;
@@ -406,6 +476,7 @@ body.showCart .cartTab {
         gap: 10px;
         text-align: center;
         align-items: center;
+        border: none;
 }
 
 .listCart .quantity span {
@@ -422,8 +493,9 @@ body.showCart .cartTab {
         color: #ffffff;
  }
 
- .listCart .item1:nth-child(even) {
+ .listCart .item:nth-child(even) {
         background-color: #7acff7;
+        border: none;
  }
 
  .listCart {overflow: auto;}
@@ -433,6 +505,8 @@ body.showCart .cartTab {
  }
 
  .cartButton {all: unset;}
+
+ 
 
 @media (max-width: 768px) {
 
@@ -609,7 +683,7 @@ body.showCart .cartTab {
 
         #price{width: 150px;
                 overflow: hidden;
-                height: 20px;
+                height: 10px;
                 color: #56b7e5;
                 font-family: 'Arial Narrow', Arial, sans-serif;
                 font-size: 1em;
