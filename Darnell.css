@@ -37,18 +37,17 @@ summary::-webkit-details-marker {
 
 details[open] {
   background: #56b7e5;
-}
+text-align: center;}
 
-details p {
-  
-}
+details p {font-size: 20px}
+
+
 
 .faq-welcome h1 {text-align: center;
 color:#1C377F;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 display: flex;
 flex-direction: row;
-width: 15%;
 margin: 0 auto;
 min-width: 100px;
 }
@@ -58,35 +57,12 @@ min-width: 100px;
 .about-1 {color: #1C377F;
 text-align: center;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-display: flex;
-flex-direction: row;
-justify-content: center;
-min-width: 100px;
 }
 
 
 
 .about-2 {text-align: center;
-margin:;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-min-width: 100px;}
-
-td img {
-border-radius: 25px;
-border-style: solid;
-border-color: #56b7e5;
-border-width: 5px;
-height: 25rem;
-display:flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-width: 100%;
-min-width: 100px;
 }
 
 
@@ -101,7 +77,8 @@ height: 20px;
 .header-section {
   display: flex;              
   justify-content: space-between; 
-  align-items: flex-start;   
+  align-items:flex-start;
+  flex-direction: row; 
   gap: 20px;                  
 }
 
@@ -109,7 +86,15 @@ height: 20px;
   flex: 1;                   
 text-align: center;}
 
+.welcome-text img {width: 90%;
+border-radius: 20px;
+border: solid;
+border-color:#1C377F}
+
 .faq-list {
   flex: 1;                   
-text-align: center;}
+text-align: center;
+margin: 70px;
+font-size: 1rem;
+}
 
