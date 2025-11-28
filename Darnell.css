@@ -84,17 +84,50 @@ height: 20px;
 
 .welcome-text {
   flex: 1;                   
-text-align: center;}
+text-align: center;
+min-width: 100px;}
 
 .welcome-text img {width: 90%;
 border-radius: 20px;
 border: solid;
-border-color:#1C377F}
+border-color:#1C377F;
+min-width: 100px;}
 
 .faq-list {
   flex: 1;                   
 text-align: center;
 margin: 70px;
 font-size: 1rem;
+min-width: 100px;}
+
+.about-section {display: flex;
+justify-content: space-between;
+align-items:flex-start;
+flex-direction: row;
+gap: 10px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.about-welcome-text{flex: 1}
+
+.about-welcome-text img {border: solid;
+border-color: #1C377F;
+border-radius: 20px;
+
+width: 70%;
+margin-left: 80px;
+margin-bottom: 50px;
+text-align: center;}
+
+
+.welcome-text2 {flex: 1;
+font-size: 20px;
+margin-top: 10px;
+margin: 0;
+}
+
+.welcome-text2 img {width: 50%;
+margin-left: 15rem;
+}
+
 
