@@ -12,18 +12,24 @@
  details {
   border: 2px solid #1C377F;
   border-radius: 10px;
-  margin: 40px auto;
+  margin: 40px 0 0 0;
   padding: 1em;
   background-color: #56b7e5;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  width: 45rem;
   font-weight: bold;
   scroll-behavior: auto;
-  text-align: left;}
+  text-align: left;
+  min-width: 100px;
+  width: 100%;
+  display: flex;
+ }
 
 summary {
   cursor: pointer;
-font-size: 20px;}
+font-size: 20px;
+min-width: 100px;
+text-align: left;
+flex: 1;}
 
 summary::-webkit-details-marker {
   display: none; /* removes default marker in Chrome/Safari */
@@ -34,44 +40,76 @@ details[open] {
 }
 
 details p {
-  margin: 1em 0 0;
+  
 }
 
 .faq-welcome h1 {text-align: center;
-margin: 0 30rem;
 color:#1C377F;
-border-style: solid;
-border-color: #56b7e5;
-margin-top: 20px; 
-border-radius: 20px;
-border-width: 7px;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+display: flex;
+flex-direction: row;
+width: 15%;
+margin: 0 auto;
+min-width: 100px;
+}
+
 
 
 .about-1 {color: #1C377F;
 text-align: center;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-border-style: solid;
-border-color: #56b7e5;
-border-width: 7px;
-margin: 0 30rem 0 30rem;
-border-radius: 20px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+min-width: 100px;
 }
 
 
 
 .about-2 {text-align: center;
-margin: 0 25rem 0 25rem;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+margin:;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+min-width: 100px;}
 
-td img {height:15rem;
+td img {
 border-radius: 25px;
-width: 30rem;
-margin-right: 100px;
 border-style: solid;
 border-color: #56b7e5;
-border-width: 5px;}
+border-width: 5px;
+height: 25rem;
+display:flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+width: 100%;
+min-width: 100px;
+}
 
 
 .email {margin: 0;
 }
+
+hr {background: linear-gradient(to right, #56b7e5,#1C377F, #56b7e5);
+border: none;
+height: 20px;
+}
+
+.header-section {
+  display: flex;              
+  justify-content: space-between; 
+  align-items: flex-start;   
+  gap: 20px;                  
+}
+
+.welcome-text {
+  flex: 1;                   
+text-align: center;}
+
+.faq-list {
+  flex: 1;                   
+text-align: center;}
+
