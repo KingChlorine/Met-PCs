@@ -1,10 +1,12 @@
-// index.html specific
+// Sign Up button test
 const signButton = document.getElementById("sign");
 if (signButton) {
   signButton.addEventListener("click", () => {
     alert("Button clicked!");
   });
 }
+
+// landing page image toggle
 
 const myImage = document.querySelector("#imageid");
 function FirstImage() {
@@ -28,7 +30,8 @@ if (buttonLeft) {
   };
 }
 
-// products.html specific
+// Cart show/hide toggle
+
 const cartButton = document.querySelector('.cartButton');
 if (cartButton) {
   cartButton.addEventListener('click', () => {
@@ -49,6 +52,9 @@ let listCartHTML = document.querySelector('.listCart');
 let iconCartSpan = document.querySelector('.socials span');
 let listProducts = [];
 let carts = [];
+
+
+// makes html structure and fills in variables basde on id
 
 const addDatatoHTML = () => {
   listProductHTML.innerHTML = '';
@@ -74,6 +80,8 @@ const addDatatoHTML = () => {
   }
 }
 
+// checks if item is in cart, increases/decreases quantity and removes if >0
+
 listCartHTML.addEventListener('click', (event) => {
   let positionClick = event.target;
   if(positionClick.classList.contains('minus') || positionClick.classList.contains('plus')){
@@ -86,6 +94,7 @@ listCartHTML.addEventListener('click', (event) => {
     changeQuantity(product_id, type);
   }
 })
+
 const changeQuantity = (product_id, type) => {
   let positionItemInCart = carts.findIndex((value) => value.product_id == product_id);
   if(positionItemInCart >= 0){
@@ -103,9 +112,10 @@ const changeQuantity = (product_id, type) => {
           }
         break;
     } 
-  } addCartToMemory();
+  } addCartToMemory(); 
     addCartToHTML();
 } 
+
 const initApp = () => {
   // get data from json
   fetch('products.json')
@@ -188,3 +198,4 @@ const addCartToHTML = () => {
   }
   iconCartSpan.innerText = totalQuantity;
 }
+

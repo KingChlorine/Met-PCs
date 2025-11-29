@@ -412,6 +412,8 @@ body.showCart .cartTab {
         
 }
 
+#data {display: none;}
+
 .listProduct .item1 {
         display: grid;
         justify-items: center;
@@ -427,6 +429,7 @@ body.showCart .cartTab {
         width: 12em;
         padding-top: 1em;
         height: 10em;
+       
        
        
 
