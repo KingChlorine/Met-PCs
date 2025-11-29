@@ -66,8 +66,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
-.email {margin: 0;
-}
+.email {margin: 0}
 
 hr {background: linear-gradient(to right, #56b7e5,#1C377F, #56b7e5);
 border: none;
@@ -130,4 +129,46 @@ margin: 0;
 margin-left: 15rem;
 }
 
+.newsletter-container {display: flex;
+justify-content: flex-start;
+align-items: flex-start;
+flex-direction: row;
+gap: 20px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+;}
 
+.newsletter-sub {flex: 1;
+border: solid;
+text-align: center;
+margin: 0;
+border-radius: 20px;
+}
+
+.news-1 {flex: 1;
+text-align: center;}
+
+.news-2 {flex: 1;
+text-align: center;
+}
+
+.newsletter-email {flex: 1;
+width: 50%;
+height: 2rem;
+justify-content: center;
+align-items: center;
+margin: 0 0 2rem;
+border: solid;
+border-radius: 20px;
+}
+
+.newsletter-sub h1 {color: #1C377F;}
+
+.news-1 img {flex: 1;
+width: 100%;
+border-radius: 20px;}
+
+.news-2 img {flex: 1;
+width: 100%;
+margin: 2rem 0 5rem 0;
+border-radius: 20px;
+}
