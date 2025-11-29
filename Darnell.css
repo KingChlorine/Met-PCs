@@ -84,16 +84,17 @@ height: 20px;
 .welcome-text {
   flex: 1;                   
 text-align: center;
-min-width: 100px;}
+}
 
 .welcome-text img {width: 90%;
-border-radius: 20px;
 border: solid;
 border-color:#1C377F;
-min-width: 100px;}
+min-width: 100px;
+width: 80%;
+border-radius: 100px;}
 
 .faq-list {
-  flex: 1;                   
+flex: 1;                   
 text-align: center;
 margin: 70px;
 font-size: 1rem;
@@ -107,16 +108,16 @@ gap: 10px;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.about-welcome-text{flex: 1}
+.about-welcome-text{flex: 1;
+text-align: center;
+}
 
 .about-welcome-text img {border: solid;
-border-color: #1C377F;
-border-radius: 20px;
-
-width: 70%;
-margin-left: 80px;
+border-radius: 200px;
+width: 80%;
 margin-bottom: 50px;
-text-align: center;}
+text-align: center;
+}
 
 
 .welcome-text2 {flex: 1;
@@ -140,12 +141,13 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 .newsletter-sub {flex: 1;
 border: solid;
 text-align: center;
-margin: 0;
+margin: 100px 0 0 0;
 border-radius: 20px;
 }
 
 .news-1 {flex: 1;
-text-align: center;}
+text-align: center;
+}
 
 .news-2 {flex: 1;
 text-align: center;
@@ -163,12 +165,26 @@ border-radius: 20px;
 
 .newsletter-sub h1 {color: #1C377F;}
 
+
 .news-1 img {flex: 1;
 width: 100%;
-border-radius: 20px;}
+border-radius: 20px;
+height: 25rem;}
 
 .news-2 img {flex: 1;
 width: 100%;
 margin: 2rem 0 5rem 0;
 border-radius: 20px;
+}
+
+.newsletter-container p {font-size: 20px;}
+
+.subscribe-button {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+background-color: #56b7e5;
+width: 15%;
+height: 2.3rem;
+border-radius: 20px;
+border: solid;}
+
+.subscribe-button:hover {cursor:pointer;
 }
