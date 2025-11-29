@@ -1,3 +1,10 @@
+const dropdown = document.querySelector(".selectCategory");
+const accessories = document.getElementById("accessories");
+
+
+ 
+
+
 // Sign Up button test
 const signButton = document.getElementById("sign");
 if (signButton) {
@@ -15,6 +22,8 @@ function FirstImage() {
 function SecondImage() {
   if (myImage) myImage.src = "images/setup3.avif";
 }
+
+//new products nav
 
 const buttonRight = document.getElementById('slideR');
 if (buttonRight) {
@@ -46,6 +55,9 @@ if (closeButton) {
   });
 
 }
+
+//getting classes for cart
+
 
 let listProductHTML = document.querySelector('.listProduct');
 let listCartHTML = document.querySelector('.listCart');
