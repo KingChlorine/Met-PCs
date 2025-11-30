@@ -28,12 +28,13 @@
     <div class="search">
         <a id="home" href="index.html"><img class="logo" src="images/Met PCs logo.png"></a>
 
-        <input class="searchbar" type="search" 
+        <input class="searchbar" type="search" id="searchItems" onkeyup="search()"
         placeholder="Search products...">
-        <select class="selectCategory">
-            <option value="">SELECT CATEGORY</option>
-            <option id="accessories">Accessories</option>
-            <option>Parts</option>
+
+        <select id="">
+            <option value="all">SELECT CATEGORY</option>
+            <option value="accessories">Accessories</option>
+            <option value="parts">Parts</option>
         </select>
         
          <button id="sign">Sign Up</button>
@@ -71,7 +72,7 @@
    
 -->      
         
-         <div class="listProduct">
+         <div class="listProduct" ID="listProduct">
             <div class="item1">
             <img src="images/rgb case - Edited.png" alt="">
             <h2>NAME PRODUCT</h2>
