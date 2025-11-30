@@ -1,10 +1,5 @@
 // index.html specific
-const signButton = document.getElementById("sign");
-if (signButton) {
-  signButton.addEventListener("click", () => {
-    alert("Button clicked!");
-  });
-}
+
 
 const myImage = document.querySelector("#imageid");
 function FirstImage() {

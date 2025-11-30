@@ -145,6 +145,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
         border: none;
         padding: 30px;
         cursor: pointer;
+        text-decoration: none;
 }
 
 #sign:hover {color: #808080;}
