@@ -92,6 +92,13 @@ a       {display: flex;
         ;
 }
 
+input:focus {
+    outline: none;
+  
+}
+select:focus {
+    outline: none;
+}
 
 .socials {display: flex;
         justify-content: flex-end;
