@@ -45,6 +45,12 @@
      "name": "SSD Card",
      "price": 20,
      "image": "images/SSD Solid State Drive.png",
+     "category": "parts"},
+
+     {"id":9,
+     "name": "Speakers",
+     "price": 60,
+     "image": "images/RGB PC Speakers.jpg",
      "category": "parts"}
 
 ]
