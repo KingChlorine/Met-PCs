@@ -188,3 +188,19 @@ border: solid;}
 
 .subscribe-button:hover {cursor:pointer;
 }
+
+@media (max-width: 768px) {
+
+  .faq-list {
+    all: unset;
+    padding: 10px;
+    margin-bottom: 4em;
+  }
+
+   .welcome-text img {
+    border: none;
+   width: 100%;
+    
+  }
+    
+}

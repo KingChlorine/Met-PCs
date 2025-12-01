@@ -268,7 +268,7 @@ cursor: pointer;}
                 align-items: center;
                 margin-bottom: 6em;
                }    
-#slideR {color: red;
+#slideR {
         margin-right: 10px;}
 
 .move {height: 10em;
@@ -574,6 +574,57 @@ body.showCart .cartTab {
  
 
 @media (max-width: 768px) {
+
+        .welcome-text {display: flex;
+                        flex-direction: column-reverse;}
+
+        .welcome-text img {
+                all: unset;
+                width: 100%
+     }
+
+        .welcome-text h1 {font-family: Arial, sans-serif;
+        font-size: 12px;
+       }
+
+          .header-section {
+                all: unset;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                
+        }
+
+        .faq-list details {
+               
+                 width: inherit;
+                
+        }
+
+        .faq-list h1 {
+               
+                color: #56b7e5;
+                text-align: center;
+                
+        }
+
+        .about-section {
+                all: unset;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                
+        }
+     
+        .about-welcome-text {
+                all: unset;
+                width: 100vw;
+                flex: 1;
+                }
+
+        .welcome-text2 p img {
+                width: 50px;
+        }
 
         .feedback {
                 all: unset;
