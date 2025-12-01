@@ -195,7 +195,8 @@ height: 2.5rem;
 }
 
 
-.subscribe-button:hover {cursor:pointer;
+.subscribe-button:hover {
+cursor:pointer;
 }
 
 .sign-container {display: flex;
@@ -204,7 +205,7 @@ align-items: center;
 font-size: 30px;
 flex-direction: column;
 border: solid;;
-width: 30%;
+width: 50%;
 margin: 10rem auto;
 border-radius: 100px;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -214,8 +215,10 @@ overflow: hidden;
 
 .sign-container input {height: 2rem;
 width: 40%;
+font-size: 20px;
 margin: 2rem;
-border-radius: 100px;}
+border-radius: 100px;
+border: solid;}
 
 
 .sign-container h1 {color: #1C377F;
@@ -273,6 +276,7 @@ padding: 10px}
 
 .sign-buttons {
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
 
