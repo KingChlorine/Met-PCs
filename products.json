@@ -45,6 +45,20 @@
      "name": "SSD Card",
      "price": 20,
      "image": "images/SSD Solid State Drive.png",
+     "category": "parts"},
+
+     {"id":9,
+     "name": "Speaker",
+     "price": 20,
+     "image": "images/RGB PC Speakers.jpg",
+     "category": "parts"},
+
+     {"id":10,
+     "name": "Trident RAM 64 GB",
+     "price": 29.99,
+     "image": "images/trident ram 64gb Ddr4.jpg",
      "category": "parts"}
+
+    
 
 ]
