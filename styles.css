@@ -570,6 +570,56 @@ body.showCart .cartTab {
  
 
 @media (max-width: 768px) {
+        #service {
+                all: unset;
+                font-size: large;
+                display: block;
+               text-align: center;
+               padding-top: 1em;
+               padding-bottom: 1em;
+               font-family:  Arial, sans-serif;
+        }
+
+        .textblock #text {all: unset;
+                display: flex;
+                width: 80%;
+                align-items: center;
+                font-family:  Arial, sans-serif;
+                }
+
+        .textblock {align-items: center;
+                   display: flex;
+                   flex-direction: column;}
+
+        .listProduct {all: unset;
+                display: flex;
+                flex-wrap: wrap;
+                width: inherit;
+                gap: 2em;
+                justify-content: center;
+                }
+
+        #seemore {padding-top: 2em;}
+
+       
+
+        iframe {width: inherit;
+                height: auto;}
+
+        .item1      {max-width: 150px;
+                    max-height: 220px;
+                    display: flex;}
+
+        .item1 img {max-width: 80px;
+                    max-height: 100px;}
+
+        .item1 button {max-width: inherit;
+                    max-height: inherit;}
+
+        .listProduct .item1 h2 {
+                   all: unset;
+                   color: #56b7e5;
+                        }
 
       .history{grid-template-columns: 1fr;}
         body {width: 384px;
