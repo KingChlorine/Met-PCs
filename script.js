@@ -240,3 +240,4 @@ const addCartToHTML = () => {
     password.type = "password"
   }
  }
+

@@ -115,22 +115,25 @@
 
 <hr>
 
-<form> 
+<form action="index.html">
 <div class="sign-container">
 <h1>Sign up to Met PCs!</h1>
-<p>Want full access to our features? That's why we have made a sign up section for those interested in using our services, ordering items, and making transactions!</p>
+<p>Want full access to our features? That's why we have made a sign up section for those 
+   interested in using our services, ordering items, and making transactions!</p>
 <label for="name"><br>Username</label>
-        <input type="text" name="name" id="name" placeholder="Enter username">
+        <input type="text" name="name" id="name" placeholder="Enter username" required minlength="8">
 
         <label for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="Enter email">
+        <input type="email" name="email" id="email" placeholder="Enter email" required>
 
         <label for="password">Password</label>
-        <input type="password" name="password" id="password" placeholder="Enter password">
-
+        <input type="password" name="password" id="password" placeholder="Enter password"
+         pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+         title="Must contain at least one number and one uppercase and lowercase letter,
+          and at least 8 or more characters" required>
         <div class="sign-buttons">
-        <button type="submit">Sign Up</button>
-       <button type="button">Sign In</button></form></div>
+        <button type="submit" value="submit">Sign up</button>
+       <form action="/submit-login" method="POST"></form><button type="submit" value="Log in">Sign in</button></form></div>
      </div> 
         
       

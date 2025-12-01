@@ -75,32 +75,32 @@ height: 20px;
 
 .header-section {
   display: flex;              
-  justify-content: space-between; 
-  align-items:flex-start;
-  flex-direction: row; 
-  gap: 20px;                  
+  justify-content: space-evenly; 
+  align-items:center;
+   flex-direction: row;
+  gap: 5px;                  
 }
 
 .welcome-text {
-  flex: 1;                   
-text-align: center;
-padding: 0 150px 0 150px;
-}
-
-.welcome-text img {width: 90%;
-border: solid;
-border-color:#1C377F;
-min-width: 100px;
-width: 70%;
-border-radius: 100px;
-margin: 5rem;}
-
-.faq-list {
 flex: 1;                   
 text-align: center;
-margin: 70px;
+margin: 0 50px;
+padding: 0 10px}
+
+.welcome-text img {
+min-width: 100px;
+width: 100%;
+border-radius: 100px;
+margin: 50px 5px}
+
+.faq-list {
+flex: 1;
+justify-content: center;
+flex-direction: row;                   
+text-align: center;
 font-size: 1rem;
-min-width: 100px;}
+margin: 0 15rem;
+}
 
 .about-section {display: flex;
 justify-content: space-between;
@@ -112,19 +112,22 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 .about-welcome-text{flex: 1;
 text-align: center;
-padding: 0 100px 0 100px}
+padding: 0 100px 0 100px;}
 
 .about-welcome-text img {border: solid;
 border-radius: 200px;
-width: 90%;
+width: 100%;
 text-align: center;
+margin-top: 30px;
 }
+.about-welcome-text p {font-size: x-large;
+padding: 0 30px;}
 
 
 .welcome-text2 {flex: 1;
 font-size: 25px;
 text-align: center;
-padding: 0 100px 100px;}
+padding: 0 30px;}
 
 .welcome-text2 img {width: 70%;
 }
@@ -221,7 +224,7 @@ font-size: 45px;}
 .sign-container p {text-align: center;
 justify-content: center;
 align-items: center;
-padding: 0 25px 0 25px;
+padding: 0 15px 0 15px;
 }
 
 
@@ -263,8 +266,16 @@ font-size: 25px;}
 width: 3%;
 cursor: pointer;}
 
-#sign-buttontop {text-decoration: none;
+#sign-buttontop {
+text-decoration: none;
 padding: 10px}
+
+.sign-buttons {
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+ 
 
 
 
