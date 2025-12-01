@@ -201,9 +201,19 @@ height: 2.5rem;
 justify-content:center;
 align-items: center;
 font-size: 20px;
-flex-direction: row;
+flex-direction: column;
+border: solid;
+align-content:center;
+width: 30%;
+margin: 5rem auto;
+border-radius: 100px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+
+.sign-container input {height: 2rem;
+margin: 2rem;
+border-radius: 100px;}
 
 
 .sign-container h1 {color: #1C377F;
@@ -256,4 +266,7 @@ cursor: pointer;}
 
 #sign-buttontop {text-decoration: none;
 padding: 10px}
+
+
+
 

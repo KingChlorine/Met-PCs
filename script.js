@@ -1,5 +1,38 @@
-// index.html specific
 
+
+const search = () =>{
+  const searchbox = document.getElementById("searchItems").value.toUpperCase();
+  const storeItems = document.getElementById("listProduct")
+  const product = document.querySelectorAll(".item1")
+  const pname = storeItems.getElementsByTagName("h2")
+
+  for(var i=0; i < pname.length; i++){
+    let match = product[i].getElementsByTagName('h2')[0];
+
+    if(match){
+     let textvalue = match.textContent || match.innerHTML
+     if(textvalue.toUpperCase().indexOf(searchbox) > -1){
+      product[i].style.display = "";
+     }else{ product[i].style.display ="none";
+
+     }
+     }
+    }
+  }
+
+ 
+
+
+
+// Sign Up button test
+const signButton = document.getElementById("sign");
+if (signButton) {
+  signButton.addEventListener("click", () => {
+    alert("Button clicked!");
+  });
+}
+
+// landing page image toggle
 
 const myImage = document.querySelector("#imageid");
 function FirstImage() {
@@ -8,6 +41,8 @@ function FirstImage() {
 function SecondImage() {
   if (myImage) myImage.src = "images/setup3.avif";
 }
+
+//new products nav
 
 const buttonRight = document.getElementById('slideR');
 if (buttonRight) {
@@ -23,7 +58,8 @@ if (buttonLeft) {
   };
 }
 
-// products.html specific
+// Cart show/hide toggle
+
 const cartButton = document.querySelector('.cartButton');
 if (cartButton) {
   cartButton.addEventListener('click', () => {
@@ -39,11 +75,17 @@ if (closeButton) {
 
 }
 
+//getting classes for cart
+
+
 let listProductHTML = document.querySelector('.listProduct');
 let listCartHTML = document.querySelector('.listCart');
 let iconCartSpan = document.querySelector('.socials span');
 let listProducts = [];
 let carts = [];
+
+
+// makes html structure and fills in variables basde on id
 
 const addDatatoHTML = () => {
   listProductHTML.innerHTML = '';
@@ -69,6 +111,8 @@ const addDatatoHTML = () => {
   }
 }
 
+// checks if item is in cart, increases/decreases quantity and removes if >0
+
 listCartHTML.addEventListener('click', (event) => {
   let positionClick = event.target;
   if(positionClick.classList.contains('minus') || positionClick.classList.contains('plus')){
@@ -81,6 +125,7 @@ listCartHTML.addEventListener('click', (event) => {
     changeQuantity(product_id, type);
   }
 })
+
 const changeQuantity = (product_id, type) => {
   let positionItemInCart = carts.findIndex((value) => value.product_id == product_id);
   if(positionItemInCart >= 0){
@@ -98,9 +143,10 @@ const changeQuantity = (product_id, type) => {
           }
         break;
     } 
-  } addCartToMemory();
+  } addCartToMemory(); 
     addCartToHTML();
 } 
+
 const initApp = () => {
   // get data from json
   fetch('products.json')

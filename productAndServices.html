@@ -24,17 +24,17 @@
     </div>
     
 
+
     <div class="search">
         <a id="home" href="index.html"><img class="logo" src="images/Met PCs logo.png"></a>
 
-        <input class="searchbar" type="search" 
+        <input class="searchbar" type="search" id="searchItems" onkeyup="search()"
         placeholder="Search products...">
-        <select class="selectCategory">
-            <option>SELECT CATEGORY</option>
-            <option>Accessories</option>
-            <option>Monitors</option>
-            <option>Cases</option>
-            <option>Components</option>
+
+        <select class="selectCategory" id="">
+            <option value="all">SELECT CATEGORY</option>
+            <option value="accessories">Accessories</option>
+            <option value="parts">Parts</option>
         </select>
         
          <a href="techNewsletter.html#sign-button" id="sign-buttontop">Sign up</a>
@@ -63,76 +63,16 @@
     
     <!-- <h1 class="title">Met PCs</h1> -->
     <h1 class="title"><a id="homeh1" href="index.html">Met PCs</a></h1>  
-    <h2 class="tagline">PCs—Laptops—Peripherals—Parts<hr></h2>
+    <h2 class="tagline">PCs—Laptops—Peripherals—Parts</h2>
     <!-- too much?
     <h3 class="sub">PRODUCTS</h3>
     -->
 
     <!--
-    <div class="container">
-
-         <div class="box">
-            <img src="images/rgb case.jpg" class="pic">
-            <button id="addcart">Add to cart</button>
-            <label class="name">This Piece of kit</label>
-            <br>
-            <label class="£">£50.00</label>
-         </div>
-         <div class="box">
-            <img src="" class="pic">
-            <button id="addcart">Add to cart</button>
-            <label class="name">This Piece of kit</label>
-            <br>
-            <label class="£">£50.00</label>
-         </div>
-         <div class="box">
-            <img src="" class="pic">
-            <button id="addcart">Add to cart</button>
-            <label class="name">This Piece of kit</label>
-            <br>
-            <label class="£">£50.00</label>
-         </div>
-         <div class="box">
-            <img src="" class="pic">
-            <button id="addcart">Add to cart</button>
-            <label class="name">This Piece of kit</label>
-            <br>
-            <label class="£">£50.00</label>
-         </div>
-         <div class="box">
-            <img src="" class="pic">
-            <button id="addcart">Add to cart</button>
-            <label class="name">This Piece of kit</label>
-            <br>
-            <label class="£">£50.00</label>
-         </div>
-         <div class="box">
-            <img src="" class="pic">
-            <button id="addcart">Add to cart</button>
-            <label class="name">This Piece of kit</label>
-            <br>
-            <label class="£">£50.00</label>
-         </div>
-         <div class="box">
-            <img src="" class="pic">
-            <button id="addcart">Add to cart</button>
-            <label class="name">This Piece of kit</label>
-            <br>
-            <label class="£">£50.00</label>
-         </div>
-         <div class="box">
-            <img src="" class="pic">
-            <button id="addcart">Add to cart</button>
-            <label class="name">This Piece of kit</label>
-            <br>
-            <label class="£">£50.00</label>
-         </div>
-          
-         
-         </div>
+   
 -->      
         
-         <div class="listProduct">
+         <div class="listProduct" ID="listProduct">
             <div class="item1">
             <img src="images/rgb case - Edited.png" alt="">
             <h2>NAME PRODUCT</h2>
