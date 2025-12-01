@@ -241,3 +241,4 @@ const addCartToHTML = () => {
   }
  }
 
+ 
