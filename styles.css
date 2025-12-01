@@ -266,14 +266,17 @@ cursor: pointer;}
         font-family: 'Arial Narrow', Arial, sans-serif;
         text-align: center;}
 
+
 .footer { 
 background-color: #1C377F;;
 height: 220px;
 display: flex;
 align-items: center;
+text-align: center;
 flex-direction: column;
 color:#ffffff;
-margin: 0;}
+margin: 0;
+}
 
 #metdark {
         height: 100px;

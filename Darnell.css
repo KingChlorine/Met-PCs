@@ -228,7 +228,9 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
 
 #sign-button {text-decoration: none;
 margin-top: 50px;
-font-size: 20px;}
+font-size: 20px;
+padding: 10px;
+}
 
 #sign-email input {border-radius: 20px;
 border: solid;
@@ -251,3 +253,7 @@ font-size: 25px;}
 #sign-password img {
 width: 3%;
 cursor: pointer;}
+
+#sign-buttontop {text-decoration: none;
+padding: 10px}
+
