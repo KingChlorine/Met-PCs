@@ -255,7 +255,7 @@ cursor: pointer;}
         white-space: nowrap;
         position: static;
         gap: 4em;
-      
+       
 }
  
 
@@ -266,9 +266,13 @@ cursor: pointer;}
  .newcontain {display: flex;
                 flex-direction: row;
                 align-items: center;
-                margin-bottom: 6em;}    
-                
-.move {height: 5em;}                
+                margin-bottom: 6em;
+               }    
+#slideR {color: red;
+        margin-right: 10px;}
+
+.move {height: 10em;
+        margin-right: 30px;}                
 
 .gallery {
         display: flex;
@@ -570,6 +574,58 @@ body.showCart .cartTab {
  
 
 @media (max-width: 768px) {
+
+        .feedback {
+                all: unset;
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+        }
+
+        .r {    all: unset;
+                width: inherit;
+                font-family: Arial, sans-serif;
+                padding: 1em;
+                font-size: 14px;
+                background-color: #f1f1f1;
+                margin-left: 10px;
+                margin-right: 10px;
+        
+        }
+        .reviews {margin-top: 50px;
+                background-color: #ffffff;}
+
+         .newcontain {
+                all: unset;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 0px;
+                padding-bottom: 0;
+                padding-left: 10px;}   
+                
+        .newcontain button {display: none;}
+                
+.move {height: 5em;}                
+
+.gallery {
+        all: unset;
+        width: 150px;
+       
+       
+
+}
+
+.group { all:unset;
+      
+        }
+
+.group img {width: 150px;
+        height: 150px;}
+
+
+
+
         #service {
                 all: unset;
                 font-size: large;
