@@ -46,9 +46,8 @@ a { text-decoration: none;
  }  
  
  .logo {height: 60px;
-        padding-right: 80px;
-        padding-left: 80px;
-       
+       padding-right: 100px;
+        margin-left: 150px;
         }
 
 a       {display: flex;
@@ -57,7 +56,8 @@ a       {display: flex;
 
  .searchbar {height: 40px;
             flex: 1;
-            padding-left: 10px;}
+            padding-left: 10px;
+        }
 
         
 .selectCategory {height: 40px;

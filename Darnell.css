@@ -141,12 +141,14 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .newsletter-sub {flex: 1;
-border: solid;
 text-align: center;
+border: solid;
 border-radius: 130px;
 height: 18rem;
 overflow: hidden;
-margin-top: 200px;}
+margin-top: 180px;
+min-width: 100px;
+padding: 40px;}
 
 .news-1 {flex: 1;
 text-align: center;
@@ -161,10 +163,11 @@ width: 50%;
 height: 2rem;
 border: solid;
 border-radius: 100px;
-font-size: 16px;}
+font-size: 16px;
+}
 
 .newsletter-sub h1 {color: #1C377F;
-margin-top: 25px;
+margin-top: 15px;
 margin-bottom: 25px;
 }
 
@@ -190,23 +193,23 @@ padding: 0 10.7px 0 10.7px;
 background-color: #56b7e5;
 border-radius: 20px;
 border: solid;
+border-color: black;
 font-size: 16px;
 height: 2.5rem;
+color: #ffffff;
 }
-
 
 .subscribe-button:hover {
 cursor:pointer;
-}
+color: #7acff7;}
 
 .sign-container {display: flex;
 justify-content:center;
 align-items: center;
 font-size: 30px;
 flex-direction: column;
-border: solid;;
 width: 50%;
-margin: 10rem auto;
+margin: 5rem auto;
 border-radius: 100px;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 overflow: hidden;
@@ -218,7 +221,8 @@ width: 40%;
 font-size: 20px;
 margin: 2rem;
 border-radius: 100px;
-border: solid;}
+border: solid;
+}
 
 
 .sign-container h1 {color: #1C377F;
@@ -228,10 +232,8 @@ font-size: 45px;}
 .sign-container p {text-align: center;
 justify-content: center;
 align-items: center;
-padding: 0 15px 0 15px;
+padding: 0 20px 0 20px;
 }
-
-
 
 .sign-newsletter {
 border: solid;
@@ -239,7 +241,8 @@ border-radius: 100px;
 width: 50%;
 height: 33rem;
 overflow: hidden;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 #sign-button {text-decoration: none;
 margin-top: 50px;
@@ -271,18 +274,23 @@ cursor: pointer;}
 
 #sign-buttontop {
 text-decoration: none;
-padding: 10px}
+color: black;
+margin-left: 130px;
+padding-right: 100px}
 
-.sign-buttons {
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+.sign-buttons button {
+background-color: #56b7e5;
+color: #fff;
+margin: 0 auto;
+font-size: 20px;
+border: solid;
+border-radius: 50px;
 }
 
-
- 
-
-
-
+.sign-buttons button:hover {
+cursor: pointer;
+color: #7acff7;
+}
 
 .subscribe-button:hover {cursor:pointer;
 }
@@ -298,7 +306,86 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    .welcome-text img {
     border: none;
    width: 100%;
+  }
+  .newsletter-container {
+    display: flex;
+    flex-direction:column;
+    gap: 10px;
     
   }
-    
+  .newsletter-sub {
+  margin-top: 40px;
+  border: none;
+  }
+  .news-1 {
+  padding: 15px;
+
+  }
+  .news-2 {
+  padding: 30px;
+
+
+  }
+  .news-1 img {
+   height: 100%;
+    border-radius: 0;
+  }
+
+  .news-2 img {
+  height: 100%;
+  border-radius: 0;
+  margin: 20px 0;
+
+  }
+  .newsletter-container p {
+  font-size: 12;
+  padding: 0 25px;
+  }
+.sign-container {
+
 }
+
+
+.sign-container input {
+width: 100%;
+}
+
+
+.sign-container h1 {
+font-size: 16px;
+}
+
+.sign-container p {
+font-size: 12px;
+}
+
+.sign-newsletter {
+
+}
+
+#sign-button {
+
+}
+
+#sign-email input {
+
+}
+
+#sign-password input {
+
+}
+
+.sign-container form {
+}
+
+#sign-password img {
+}
+
+#sign-buttontop {
+}
+
+.sign-buttons button {
+
+}
+}
+
