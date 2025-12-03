@@ -136,6 +136,7 @@ font-size: 25px;
 text-align: center;
 padding: 20px;}
 
+
 .welcome-text2 img {
   width: 75%;
   border-radius: 50px;
@@ -413,6 +414,7 @@ flex-direction:column;
 .about-welcome-text p {
 font-size: 23px;
 padding: 25px;
+margin: 0;
 }
 
 .about-welcome-text img {
@@ -424,6 +426,7 @@ border: none;
 .about-welcome-text h1 {
 font-size: 25px;
 }
+
 
 .welcome-text2 p {
 font-size: 23px;
@@ -440,5 +443,9 @@ border-radius: 0;
 border-radius: 0;
 width: 80%;
 height: 15rem;
+}
+
+.welcome-text3 p {
+padding: 25px;
 }
 }
