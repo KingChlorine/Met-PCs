@@ -648,7 +648,6 @@ body.showCart .cartTab {
 
 @media (max-width: 768px) {
 
-<<<<<<< HEAD
 
         .cartIcon {padding-right: 1em;}
 
@@ -723,15 +722,6 @@ body.showCart .cartTab {
         .cartTab {width:100vw;
                   inset: 0 -500px 0 auto;}
 
-=======
-        body {width: 100vw;}
-
-        .cartTab {width:100vw;}
-
-        .quantity {width: 80px;}
-
-
->>>>>>> 286f0ded9a60a6b8f49236caadebf2fc1adb6e15
         .welcome-text {display: flex;
                         flex-direction: column-reverse;}
 
