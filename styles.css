@@ -319,6 +319,9 @@ cursor: pointer;}
         text-align: center;}
 
 
+
+
+
 .footer { 
 background-color: #1C377F;;
 height: 220px;
@@ -329,6 +332,7 @@ flex-direction: column;
 color:#ffffff;
 margin: 0;
 }
+
 
 #metdark {
         height: 100px;
