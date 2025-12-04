@@ -5,36 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Met PCs About</title>
     <link href="styles.css" rel="stylesheet"/>
+    <link href="Darnell.css" rel="stylesheet"/>
    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
     rel="stylesheet">
-    <link href="Darnell.css" rel="stylesheet"/>
     
-   
     
 </head>
-<body class="">
+   <body class="">
+
+  
     
+
 
     <div class="search">
         <a id="home" href="index.html"><img class="logo" src="images/Met PCs logo.png"></a>
 
-        <a href="productAndServices.html" class="searchbar"><input class="searchbar" type="search" placeholder="Search products..."></a>
-        <select class="selectCategory">
-            <option>SELECT CATEGORY</option>
-            <option>Accessories</option>
-            <option>Monitors</option>
-            <option>Cases</option>
-            <option>Components</option>
+        <input class="searchbar" type="search" id="searchItems" onkeyup="search()"
+        placeholder="Search products...">
+
+        <select class="selectCategory" id="">
+            <option value="all">SELECT CATEGORY</option>
+            <option value="accessories">Accessories</option>
+            <option value="parts">Parts</option>
         </select>
         
          <a href="techNewsletter.html#sign-button" id="sign-buttontop">Sign up</a>
     </div>
 
-     <div class="navBar">
+    <div class="navBar">
         <a class="navLink" href="index.html">Home</a>
-        <a class="navLink" href="About.html"><u>About</u></a>
-        <a class="navLink" href="productAndServices.html">Products & Services</a>
+        <a class="navLink" href="About.html">About</a>
+        <a class="navLink" href="productAndServices.html"><u>Products & Services</u></a>
         <a class="navLink" href="contact.html">Contact Us</a>
         <a class="navLink" href="techNewsletter.html">Tech Newsletter</a>
         <a class="navLink" href="faq.html">FAQ</a>
@@ -56,25 +58,28 @@
 
     <div class="navMenu">
         <a class="menuItem" href="index.html">Home</a>
-        <a class="menuItem" href="About.html"><u>About</u></a>
-        <a class="menuItem" href="productAndServices.html">Products & Services</a>
+        <a class="menuItem" href="About.html">About</a>
+        <a class="menuItem" href="productAndServices.html"><u>Products & Services</u></a>
         <a class="menuItem" href="contact.html">Contact Us</a>
         <a class="menuItem" href="techNewsletter.html">Tech Newsletter</a>
         <a class="menuItem" href="faq.html">FAQ</a>
     </div>
-
     
     <!-- <h1 class="title">Met PCs</h1> -->
     <h1 class="title"><a id="homeh1" href="index.html">Met PCs</a></h1>  
-    <h2 class="tagline">PCs—Laptops—Peripherals—Parts<hr></h2>
+    <h2 class="tagline">PCs—Laptops—Peripherals—Parts</h2>
     <!-- too much?
     <h3 class="sub">PRODUCTS</h3>
     -->
 
-     <div id="data" class="listProduct">
+    <!--
+   
+-->      
+        
+         <div class="listProduct" ID="listProduct">
             <div class="item1">
             <img src="images/rgb case - Edited.png" alt="">
-            <h2>NAME PRODUCT</h2>
+            <h2 id="pnames">NAME PRODUCT</h2>
             <div class="price">
             <button class="addcart">
                Add To Cart
@@ -83,8 +88,11 @@
             </div>
          </div>
 
+         <div id="seemore">
+         <button id="see">See more</button>
+         </div>
 
-  <div class="cartTab">
+         <div class="cartTab">
             <h1>Shopping Cart</h1>
             <div class="listCart">  
             </div>
@@ -93,25 +101,27 @@
                <button class="checkOut">CHECK OUT</button>
             </div>
          </div>
-   
-<div class="about-section">
-<div class="about-welcome-text">
-   <h1>About our team and what we can provide with sales, service, and experience!</h1>
-   <img src="https://evolvegamingpc.com.au/cdn/shop/files/staff_2_1.png?v=1704841831&width=1200">
-   <br><p>We provide a high quality Custom PC building service tailored to whatever the customer requires for their system and expert advice on PCs or anything related.
-    As a company based in Belfast, we have aspired to grow big enough to provide the best customer experience across the UK with our new stores opening for inclusivity.</p>
-</div>
-
-
-<div class="welcome-text2">
-   <p>Welcome to Met PCs' dedicated to selling, buying, and building computers whether they are desktop or gaming PCs including laptops.
-       Met PCs is a PC store that has been in business for over 3 years and provide an excellent high quality service to all new and existing customers.
-      <img src="https://wpstaq-ap-southeast-2-media.s3.amazonaws.com/careremedy/wp-content/uploads/media/2022/11/WHO-WE-ARE-01-scaled.jpg">
-      <br>We also offer deliveries across Europe and will be able to browse everything we have in stock and are easy to contact for any enquiries with our customer support team!
-       We hope you have the best experience with our services and we welcome you to Met PCs for all tech enthusiasts! 
-   </p>
-</div>
-</div>
+      
+         <div class="shopfront">
+   <iframe width="560" height="315" 
+   src="https://www.youtube.com/embed/wjASUV6_FMk?si=OBmuJJznUE1xkbhz&amp;start=14" 
+   title="YouTube video player" 
+   frameborder="0" allow="accelerometer"; allow="autoplay; encrypted-media" clipboard-write; encrypted-media; gyroscope; 
+   picture-in-picture;  
+   referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="textblock">
+       <h2 id="service">Custom PC Building</h2>
+       <p id="text">At Met PCs, we don’t just sell top-tier components—we bring your dream rig to life.
+         Whether you're a gamer chasing peak performance, a creator needing serious horsepower,
+          or a professional with specific workflow demands, our custom PC building service is 
+          designed to deliver. Simply share your specifications, and our expert team will 
+          assemble a system tailored to your needs using high-quality parts and peripherals 
+          from our extensive inventory. From cable management to thermal optimization, 
+          every build is crafted with precision and care—so you get a machine that’s ready to 
+          perform straight out of the box.</p>
+          
+    </div>
+    </div>
 
 <div class="footer">
         <a href="productAndServices.html"><img id="metdark" src="images/Met dark.png"></a>
@@ -120,7 +130,7 @@
         <p class="email">MetPCs123@gmail.com</p>
         <p>123 1234 1234</p>
 
-         <script src="script.js"></script> 
-
+ <script src="script.js"></script> 
+          
 </body>
 </html>
