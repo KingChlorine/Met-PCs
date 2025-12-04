@@ -76,6 +76,25 @@ if (closeButton) {
 
 }
 
+//checkout button clears cart storage and triggers alert
+
+const checkOutButton = document.querySelector('.checkOut');
+
+if (checkOutButton) {
+  checkOutButton.addEventListener('click', () => {
+
+
+    carts = [];
+    listCart = [];
+    localStorage.removeItem('cart'); 
+    iconCartSpan.innerText = 0;
+    document.querySelector('.listCart').innerHTML = '';
+    document.body.classList.remove('showCart');
+
+    alert("Thank you for shopping at MetPCs!");
+  });
+}
+
 //getting classes for cart
 
 
@@ -90,27 +109,32 @@ let carts = [];
 
 const addDatatoHTML = () => {
   listProductHTML.innerHTML = '';
-  if(listProducts.length > 0) {
-    listProducts.forEach(product => {
-      let newProduct = document.createElement('div');
-      newProduct.classList.add('item1');
-      newProduct.dataset.id = product.id;
-      newProduct.innerHTML = `
-    
-           
-            <img src="${product.image}" alt="">
-            <h2>${product.name}</h2>
-            <div class="price">£${product.price}</div>
-            <button class="addcart">
-               Add To Cart
-            </button>
-        
-         `; 
-            listProductHTML.appendChild(newProduct)
 
-    })
-  }
-}
+  const selectedCategory = document.getElementById('categoryFilter').value;
+
+  // Filter products
+  const filteredProducts = selectedCategory === "all"
+    ? listProducts
+    : listProducts.filter(product => product.category === selectedCategory);
+
+  // Render filtered products
+  filteredProducts.forEach(product => {
+    let newProduct = document.createElement('div');
+    newProduct.classList.add('item1');
+    newProduct.dataset.id = product.id;
+    newProduct.innerHTML = `
+        <img src="${product.image}" alt="">
+        <h2>${product.name}</h2>
+        <div class="price">£${product.price}</div>
+        <button class="addcart">Add To Cart</button>
+    `;
+    listProductHTML.appendChild(newProduct);
+  });
+};
+
+document.getElementById('categoryFilter').addEventListener('change', () => {
+  addDatatoHTML();
+});
 
 // checks if item is in cart, increases/decreases quantity and removes if >0
 
@@ -149,13 +173,13 @@ const changeQuantity = (product_id, type) => {
 } 
 
 const initApp = () => {
-  // get data from json
+
   fetch('products.json')
   .then(Response => Response.json())
   .then(data => {
     listProducts = data;
     addDatatoHTML();
-//get cart from memory
+
 if(localStorage.getItem('cart')){
   carts = JSON.parse(localStorage.getItem('cart'));
   addCartToHTML();
