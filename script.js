@@ -24,11 +24,12 @@ const search = () =>{
 
 
 
-// Sign Up button test
-const signButton = document.getElementById("sign");
-if (signButton) {
-  signButton.addEventListener("click", () => {
-    alert("Button clicked!");
+// toggle navmenu with burger icon element
+const burgerButton = document.querySelector('.burgerButton');
+
+if (burgerButton) {
+  burgerButton.addEventListener('click', () => {
+    document.body.classList.toggle('showMenu');
   });
 }
 
@@ -80,7 +81,7 @@ if (closeButton) {
 
 let listProductHTML = document.querySelector('.listProduct');
 let listCartHTML = document.querySelector('.listCart');
-let iconCartSpan = document.querySelector('.socials span');
+let iconCartSpan = document.querySelector('.cartButton span');
 let listProducts = [];
 let carts = [];
 
