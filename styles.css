@@ -320,17 +320,33 @@ cursor: pointer;}
 
 
 
-
+.footer-container {
+background-color: #1C377F;
+color: #ffffff;
+display: flex;
+justify-content:center;
+flex-direction: column;
+}
 
 .footer { 
 background-color: #1C377F;;
 height: 220px;
-display: flex;
 align-items: center;
 text-align: center;
 flex-direction: column;
 color:#ffffff;
-margin: 0;
+flex: 1;
+}
+
+.footer2 {
+flex: 0;
+text-align: center;
+}
+
+.footer2 img {
+width: 20%;
+height: 40px;
+padding-bottom: 20px;
 }
 
 
