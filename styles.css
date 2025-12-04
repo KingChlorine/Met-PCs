@@ -47,9 +47,8 @@ a { text-decoration: none;
  }  
  
  .logo {height: 60px;
-        padding-right: 80px;
-        padding-left: 80px;
-       
+       padding-right: 100px;
+        margin-left: 150px;
         }
 
 a       {display: flex;
@@ -59,8 +58,7 @@ a       {display: flex;
  .searchbar {height: 40px;
             flex: 1;
             padding-left: 10px;
-
-            }
+        }
 
         
 .selectCategory {height: 40px;
@@ -344,16 +342,36 @@ cursor: pointer;}
         text-align: center;}
 
 
+
+.footer-container {
+background-color: #1C377F;
+color: #ffffff;
+display: flex;
+justify-content:center;
+flex-direction: column;
+}
+
 .footer { 
 background-color: #1C377F;;
 height: 220px;
-display: flex;
 align-items: center;
 text-align: center;
 flex-direction: column;
 color:#ffffff;
-margin: 0;
+flex: 1;
 }
+
+.footer2 {
+flex: 0;
+text-align: center;
+}
+
+.footer2 img {
+width: 20%;
+height: 40px;
+padding-bottom: 20px;
+}
+
 
 #metdark {
         height: 100px;

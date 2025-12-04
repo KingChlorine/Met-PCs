@@ -18,17 +18,18 @@
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bold;
   scroll-behavior: auto;
-  text-align: left;
+  text-align: center;
   min-width: 100px;
   width: 100%;
   display: flex;
+  flex-direction: column;
  }
 
 summary {
   cursor: pointer;
 font-size: 20px;
 min-width: 100px;
-text-align: left;
+text-align: center;
 flex: 1;}
 
 summary::-webkit-details-marker {
@@ -74,24 +75,31 @@ height: 20px;
 }
 
 .header-section {
-  display: flex;              
-  justify-content: space-evenly; 
-  align-items:center;
-   flex-direction: row;
-  gap: 5px;                  
+display: flex;              
+justify-content: space-evenly; 
+align-items:center;
+flex-direction: row;
+gap: 5px;                  
 }
 
 .welcome-text {
-flex: 1;                   
+flex: 1;
+font-size: 30px;                   
 text-align: center;
-margin: 0 50px;
-padding: 0 10px}
+padding: 0 10px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
 
 .welcome-text img {
 min-width: 100px;
 width: 100%;
 border-radius: 100px;
-margin: 50px 5px}
+margin: 20px;
+}
+
+.welcome-text h1 {
+font-size: 40px;
+}
 
 .faq-list {
 flex: 1;
@@ -99,37 +107,62 @@ justify-content: center;
 flex-direction: row;                   
 text-align: center;
 font-size: 1rem;
-margin: 0 15rem;
+margin: 0 5rem 5rem;
 }
 
 .about-section {display: flex;
-justify-content: space-between;
-align-items:flex-start;
+justify-content:space-between;
+align-items: center;
+align-items: center;
 flex-direction: row;
-gap: 10px;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+gap: 20px;
 }
 
-.about-welcome-text{flex: 1;
+.about-welcome-text{
+flex: 1;
 text-align: center;
-padding: 0 100px 0 100px;}
+}
 
-.about-welcome-text img {border: solid;
+.about-welcome-text img {
+border: solid;
 border-radius: 200px;
-width: 100%;
+width: 90%;
 text-align: center;
-margin-top: 30px;
+
 }
-.about-welcome-text p {font-size: x-large;
-padding: 0 30px;}
+
+
+.about-welcome-text p {
+font-size: x-large;
+padding: 10px;
+}
 
 
 .welcome-text2 {flex: 1;
 font-size: 25px;
 text-align: center;
-padding: 0 30px;}
+padding: 20px;}
 
-.welcome-text2 img {width: 70%;
+
+.welcome-text2 img {
+  width: 75%;
+  border-radius: 50px;
+}
+
+.welcome-text2 p {
+padding: 0 30px;
+}
+
+.welcome-text3 {flex: 1;
+text-align: center;
+font-size: x-large;
+}
+
+.welcome-text3 img {
+width: 90%;
+height: 25rem;
+border-radius: 125px;
 }
 
 .newsletter-container {display: flex;
@@ -141,12 +174,14 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .newsletter-sub {flex: 1;
-border: solid;
 text-align: center;
+border: solid;
 border-radius: 130px;
 height: 18rem;
 overflow: hidden;
-margin-top: 200px;}
+margin-top: 180px;
+min-width: 100px;
+padding: 40px;}
 
 .news-1 {flex: 1;
 text-align: center;
@@ -161,10 +196,11 @@ width: 50%;
 height: 2rem;
 border: solid;
 border-radius: 100px;
-font-size: 16px;}
+font-size: 16px;
+}
 
 .newsletter-sub h1 {color: #1C377F;
-margin-top: 25px;
+margin-top: 15px;
 margin-bottom: 25px;
 }
 
@@ -190,35 +226,35 @@ padding: 0 10.7px 0 10.7px;
 background-color: #56b7e5;
 border-radius: 20px;
 border: solid;
+border-color: black;
 font-size: 16px;
 height: 2.5rem;
+color: #ffffff;
 }
-
 
 .subscribe-button:hover {
 cursor:pointer;
-}
+color: #7acff7;}
 
 .sign-container {display: flex;
 justify-content:center;
 align-items: center;
 font-size: 30px;
 flex-direction: column;
-border: solid;;
 width: 50%;
-margin: 10rem auto;
+margin: 5rem auto;
 border-radius: 100px;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-overflow: hidden;
 }
 
 
 .sign-container input {height: 2rem;
 width: 40%;
 font-size: 20px;
-margin: 2rem;
+margin: 1rem;
 border-radius: 100px;
-border: solid;}
+border: solid;
+}
 
 
 .sign-container h1 {color: #1C377F;
@@ -228,10 +264,8 @@ font-size: 45px;}
 .sign-container p {text-align: center;
 justify-content: center;
 align-items: center;
-padding: 0 15px 0 15px;
+padding: 0 20px 0 20px;
 }
-
-
 
 .sign-newsletter {
 border: solid;
@@ -239,7 +273,8 @@ border-radius: 100px;
 width: 50%;
 height: 33rem;
 overflow: hidden;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 #sign-button {text-decoration: none;
 margin-top: 50px;
@@ -271,20 +306,25 @@ cursor: pointer;}
 
 #sign-buttontop {
 text-decoration: none;
-padding: 10px;
-padding-left: 70px;
-padding-right: 70px;}
-
-.sign-buttons {
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+color: black;
+margin-left: 130px;
+padding-right: 100px;
 }
 
+.sign-buttons button {
+background-color: #56b7e5;
+color: #fff;
+margin: 0 auto;
+font-size: 20px;
+border: solid;
+border-color: black;
+border-radius: 50px;
+}
 
- 
-
-
-
+.sign-buttons button:hover {
+cursor: pointer;
+color: #7acff7;
+}
 
 .subscribe-button:hover {cursor:pointer;
 }
@@ -292,15 +332,159 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 @media (max-width: 768px) {
 
   .faq-list {
-    all: unset;
-    padding: 10px;
-    margin-bottom: 4em;
+  all: unset;
+  display: flex;
+  padding: 10px;
+  margin-bottom: 4rem;
+  flex-direction: column;
+  width: 90%;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 12px;
   }
 
-   .welcome-text img {
-    border: none;
-   width: 100%;
-    
+ .faq-list h1 {
+ color: black;
+ }
+
+  .faq-list summary {
+  font-size: 16px;
+
   }
-    
+
+ details p {
+ font-size: 16px;
+ }
+
+  .welcome-text img {
+  border: none;
+  width: 90%;
+  }
+
+  .welcome-text h1 {
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+
+  }
+
+
+  .newsletter-container {
+  display: flex;
+  flex-direction:column;
+  gap: 10px; 
+  }
+
+  .newsletter-sub {
+  margin-top: 40px;
+  border: none;
+  }
+  .news-1 {
+  padding: 15px;
+
+  }
+  .news-2 {
+  padding: 30px;
+
+
+  }
+  .news-1 img {
+   height: 100%;
+    border-radius: 0;
+  }
+
+  .news-2 img {
+  height: 100%;
+  border-radius: 0;
+  margin: 20px 0;
+
+  }
+  .newsletter-container p {
+  font-size: 12;
+  padding: 0 25px;
+  }
+
+.sign-container {
+font-size: 20px;
+}
+
+
+.sign-container input {
+width: 100%;
+height: 25px;
+font-size: 12px;
+}
+
+
+.sign-container h1 {
+font-size: 30px;
+margin: 0;
+}
+
+.sign-container p {
+font-size: 20px;
+padding: 0 0.5px;
+}
+
+.sign-buttons button {
+width: 100%;
+font-size: 16px;
+margin: 5px
+}
+
+.about-section {
+display:flex;
+justify-content:center;
+flex-wrap:nowrap;
+align-items:center;
+align-content: center;
+flex-direction:column;
+}
+
+
+.about-welcome-text p {
+font-size: 23px;
+padding: 25px;
+margin: 0;
+}
+
+.about-welcome-text img {
+width: 80%;
+border-radius: 0;
+border: none;
+}
+
+.about-welcome-text h1 {
+font-size: 25px;
+}
+
+
+.welcome-text2 p {
+font-size: 23px;
+padding: 2.5px;
+
+}
+
+.welcome-text2 img {
+width: 100%;
+border-radius: 0;
+}
+
+.welcome-text3 img {
+border-radius: 0;
+width: 80%;
+height: 15rem;
+}
+
+.welcome-text3 p {
+padding: 25px;
+}
+
+.footer2 {
+padding: 30px;
+}
+
+.footer2 img {
+all: unset;
+width: 70%;
+}
 }
