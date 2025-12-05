@@ -487,4 +487,8 @@ padding: 30px;
 all: unset;
 width: 70%;
 }
+
+#sign-buttontop {
+  all: unset;
+}
 }

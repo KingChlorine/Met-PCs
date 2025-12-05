@@ -57,8 +57,7 @@ a       {display: flex;
 
  .searchbar {height: 40px;
             flex: 1;
-            padding-left: 10px;
-        }
+            padding-left: 10px;}
 
         
 .selectCategory {height: 40px;
@@ -176,7 +175,7 @@ color: #56b7e5;}
         font-size: 1.2em;}
             
 
-#service {all: unset;
+#service {
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         margin: auto;
         text-align: center;
@@ -679,6 +678,16 @@ color: #1C377F;}
 
 @media (max-width: 768px) {
 
+        main .contact-font {color: black;
+        border-style: solid;
+        border-color: black;
+        width: 80%;
+        padding: 0 50 0 50;
+        margin-left: 2rem;
+        text-align: center;}
+
+         main .contact-font img {width: 20rem;}
+
 
         .cartIcon {padding-right: 1em;}
 
@@ -739,7 +748,7 @@ color: #1C377F;}
         .cartButton {background: none;
                      border: none;
                      color: #ffffff;
-                     font-size: 1.5em;}
+                     font-size: 1.2em;}
 
         .burgerMenu {display: flex;
                      color: #ffffff;
@@ -817,7 +826,7 @@ color: #1C377F;}
                 width: inherit;
                 font-family: Arial, sans-serif;
                 padding: 1em;
-                font-size: 14px;
+                font-size: .8em;
                 background-color: #f1f1f1;
                 margin-left: 10px;
                 margin-right: 10px;
@@ -861,13 +870,9 @@ color: #1C377F;}
 
 
         #service {
-                all: unset;
-                font-size: large;
-                display: block;
-               text-align: center;
-               padding-top: 1em;
-               padding-bottom: 1em;
-               font-family:  Arial, sans-serif;
+              margin-bottom: 1em;
+              margin-top: 1em;
+              font-size: 2.2em;
         }
 
         .textblock #text {all: unset;
@@ -894,8 +899,7 @@ color: #1C377F;}
 
        
 
-        iframe {width: inherit;
-                height: auto;}
+        iframe {margin-top: 2em;}
 
         .item1      {max-width: 150px;
                     max-height: 220px;
@@ -948,12 +952,8 @@ color: #1C377F;}
                 margin-left: 1em;
                }
         
-        .search {display: none;
-                width: 80vw;
-                margin-left: 1em;
-                height: 40px;
-                margin-top: 1em;
-                margin-bottom: 1em;
+        .search {
+               
 
               }
 
@@ -963,15 +963,7 @@ color: #1C377F;}
         cursor: pointer;
         margin-right: 1em;}
         
-        .logo, #home {display: none;
-                        
-                       }
-        
-        #sign {padding-left: 2vw;
-                padding-right: 0;}
-        
-        .searchbar {padding-right: 10vw;
-                        margin-left: 1vw;}
+        .logo, #home {display: none;}
 
        
 
@@ -1006,7 +998,7 @@ color: #1C377F;}
                 padding-left: 0;
                 }
         
-                .search {}
+                .search { width: 50vw;}
 
         .navbar::-webkit-scrollbar {
                 display: none; 
@@ -1017,8 +1009,15 @@ color: #1C377F;}
                 display: none; 
         }
         
+        .search a {width: 50px;}
 
-        .search a {padding: 0;}
+       #sign-buttontop {
+        width: 50px;
+       }
+
+        .search {display: flex;
+                justify-content: center;
+                margin: auto;}
 
         
         

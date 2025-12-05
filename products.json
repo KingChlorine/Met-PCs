@@ -57,7 +57,19 @@
      "name": "Trident RAM 64 GB",
      "price": 29.99,
      "image": "images/trident_ram_64gb_Ddr4.png",
-     "category": "parts"}
+     "category": "parts"},
+
+      {"id":11,
+     "name": "ASUS ROG Strix G16",
+     "price": 1999,
+     "image": "images/asusStrixG16.png",
+     "category": "laptops"},
+
+      {"id":12,
+     "name": "HP ZBook Power",
+     "price": 1800,
+     "image": "images/hpLaptop.png",
+     "category": "laptops"}
 
     
 
